@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="FuelSum privacy policy: local fuel and trip records, location, receipt scanning, Firebase Analytics, Crashlytics, Google Play tips, and your choices.">
+  <meta name="description" content="FuelSum privacy policy: local fuel and trip records, location, optional automatic trips, receipt scanning, Firebase Analytics, Crashlytics, Google Play tips, and your choices.">
   <meta name="theme-color" content="#112c34">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>FuelSum Privacy Policy | Protus App Development</title>
@@ -110,7 +110,7 @@
       <p class="eyebrow">FuelSum · Android</p>
       <h1>Privacy policy</h1>
       <p class="intro">What FuelSum stores, what its services receive, and the choices you have over your information.</p>
-      <p class="updated">Effective and last updated: <time datetime="2026-09-28">28 September 2026</time></p>
+      <p class="updated">Effective and last updated: <time datetime="2026-10-04">4 October 2026</time></p>
     </div>
     <div class="overview" aria-label="Privacy overview">
       <div class="summary-card">
@@ -152,8 +152,9 @@
           <h2>2. Your records and location</h2>
           <p>Information you enter is stored in the app’s private storage on your device. This can include vehicle details and nicknames, fuel purchases and prices, odometer readings, receipt photos, budgets, saved estimates, trip dates and distances, and optional notes, journey names, business labels or client/project details. FuelSum uses these records to provide its calculations, history, reports and backups.</p>
           <h3>Live trip recording</h3>
-          <p>With Android location permission, FuelSum uses precise or approximate location to calculate distance during a trip you start. An active recording can continue when you leave the app or turn off the screen using an Android foreground service and an ongoing notification. You can pause or finish the recording, or revoke location permission in Android settings.</p>
-          <p>Location samples are processed on the device to measure distance. FuelSum does not upload a route or GPS coordinates to Protus, Analytics or Crashlytics. Android and Google Play services provide location under your device’s settings and Google’s policies. Manual fuel entry and calculations can be used without location permission.</p>
+          <p>With Android location permission, FuelSum uses precise or approximate location to calculate distance during a trip. An active recording can continue when you leave the app or turn off the screen using an Android foreground service and an ongoing notification. You can pause or finish the recording, or revoke location permission in Android settings.</p>
+          <p>You can turn on <strong>Settings → Live recording → Start trips automatically</strong>. That setting stays off until you turn it on. When it is on, FuelSum uses Android physical-activity detection on your device to notice travel in a vehicle, then starts the same recording. It cannot tell whether you are driving or riding as a passenger. A finished trip is saved on the device. If you were a passenger, you can remove that trip from the save screen or later from trip history so it is not counted. Turning the setting off stops new automatic trips. You can also revoke physical-activity permission in Android settings.</p>
+          <p>Location samples and activity detection are processed on the device to measure distance and to decide when an automatic trip starts or ends. FuelSum does not upload a route, GPS coordinates or activity-detection results to Protus, Analytics or Crashlytics. Android and Google Play services provide location and activity detection under your device’s settings and Google’s policies. Manual fuel entry and calculations can be used without location or physical-activity permission.</p>
           <h3>Photos and files</h3>
           <p>You choose a receipt photo through Android’s file/photo interface or take one with your camera app. FuelSum accesses the image you select or capture, rather than your whole photo library. A saved receipt is kept with its fuel purchase and can be included in a backup. The camera app or photo provider may keep its own copy under its own settings.</p>
         </section>
@@ -204,7 +205,7 @@
         </section>
         <section id="choices">
           <h2>9. Your choices and requests</h2>
-          <p>You can independently turn off the two Firebase services in Settings → Privacy, manage location and notification permissions in Android settings, change automatic-backup settings, and edit, export or delete your local records.</p>
+          <p>You can independently turn off the two Firebase services in Settings → Privacy, turn automatic trip recording off in Settings → Live recording, manage location, physical-activity and notification permissions in Android settings, change automatic-backup settings, and edit, export or delete your local records. You can remove a saved trip if you were a passenger.</p>
           <p>Depending on applicable law, you may have rights to request access, correction or deletion of personal information, or to object to or restrict its processing. Contact us using the details below. We may need enough information to verify and locate the relevant information. We cannot directly access records that exist only on your device, and telemetry is not linked to a FuelSum account. A request may therefore require additional information and is subject to applicable retention obligations and technical limits.</p>
           <p>You do not need to send us your fuel database or receipts to ask a privacy question. Include only what is necessary for your request.</p>
         </section>
