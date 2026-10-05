@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="FuelSum privacy policy: local fuel and trip records, location, optional automatic trips, receipt scanning, Firebase Analytics, Crashlytics, Google Play tips, and your choices.">
+  <meta name="description" content="FuelSum privacy policy: local fuel and trip records, location, a one-time purchase for automatic trips, receipt scanning, Firebase Analytics, Crashlytics, Google Play tips, and your choices.">
   <meta name="theme-color" content="#112c34">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>FuelSum Privacy Policy | Protus App Development</title>
@@ -110,7 +110,7 @@
       <p class="eyebrow">FuelSum · Android</p>
       <h1>Privacy policy</h1>
       <p class="intro">What FuelSum stores, what its services receive, and the choices you have over your information.</p>
-      <p class="updated">Effective and last updated: <time datetime="2026-10-04">4 October 2026</time></p>
+      <p class="updated">Effective and last updated: <time datetime="2026-10-05">5 October 2026</time></p>
     </div>
     <div class="overview" aria-label="Privacy overview">
       <div class="summary-card">
@@ -133,7 +133,7 @@
             <li><a href="#analytics">03 &nbsp; Usage statistics</a></li>
             <li><a href="#crashes">04 &nbsp; Crash reports</a></li>
             <li><a href="#receipts">05 &nbsp; Receipt scanning</a></li>
-            <li><a href="#payments">06 &nbsp; Tips &amp; sharing</a></li>
+            <li><a href="#payments">06 &nbsp; Payments &amp; sharing</a></li>
             <li><a href="#retention">07 &nbsp; Retention &amp; deletion</a></li>
             <li><a href="#security">08 &nbsp; Security &amp; providers</a></li>
             <li><a href="#choices">09 &nbsp; Your choices</a></li>
@@ -153,7 +153,7 @@
           <p>Information you enter is stored in the app’s private storage on your device. This can include vehicle details and nicknames, fuel purchases and prices, odometer readings, receipt photos, budgets, saved estimates, trip dates and distances, and optional notes, journey names, business labels or client/project details. FuelSum uses these records to provide its calculations, history, reports and backups.</p>
           <h3>Live trip recording</h3>
           <p>With Android location permission, FuelSum uses precise or approximate location to calculate distance during a trip. An active recording can continue when you leave the app or turn off the screen using an Android foreground service and an ongoing notification. You can pause or finish the recording, or revoke location permission in Android settings.</p>
-          <p>You can turn on <strong>Settings → Live recording → Start trips automatically</strong>. That setting stays off until you turn it on. When it is on, FuelSum uses Android physical-activity detection on your device to notice travel in a vehicle, then starts the same recording. It cannot tell whether you are driving or riding as a passenger. A finished trip is saved on the device. If you were a passenger, you can remove that trip from the save screen or later from trip history so it is not counted. Turning the setting off stops new automatic trips. You can also revoke physical-activity permission in Android settings.</p>
+          <p>Automatic car trips are a one-time purchase through Google Play. Manual live trips stay free and do not require that purchase. <strong>Settings → Live recording → Start trips automatically</strong> stays off until the purchase is completed and you turn the setting on. When it is on, FuelSum uses Android physical-activity detection on your device to notice travel in a vehicle, then starts the same recording. It cannot tell whether you are driving or riding as a passenger. A finished trip is saved on the device. If you were a passenger, you can remove that trip from the save screen or later from trip history so it is not counted. Turning the setting off stops new automatic trips. You can also revoke physical-activity permission in Android settings. Payment handling for this purchase is described in section 6.</p>
           <p>Location samples and activity detection are processed on the device to measure distance and to decide when an automatic trip starts or ends. FuelSum does not upload a route, GPS coordinates or activity-detection results to Protus, Analytics or Crashlytics. Android and Google Play services provide location and activity detection under your device’s settings and Google’s policies. Manual fuel entry and calculations can be used without location or physical-activity permission.</p>
           <h3>Photos and files</h3>
           <p>You choose a receipt photo through Android’s file/photo interface or take one with your camera app. FuelSum accesses the image you select or capture, rather than your whole photo library. A saved receipt is kept with its fuel purchase and can be included in a backup. The camera app or photo provider may keep its own copy under its own settings.</p>
@@ -177,9 +177,12 @@
           <p>ML Kit separately sends technical metrics to Google, such as app and device details, a per-installation identifier, processing times, image dimensions/formats, feature usage and error codes. These help Google maintain and improve the recognition service. ML Kit can also contact Google for service updates and compatibility information. Its metrics are separate from Firebase Analytics and Crashlytics and are not controlled by FuelSum’s two Firebase privacy switches. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit’s data disclosure</a>.</p>
         </section>
         <section id="payments">
-          <h2>6. Tips, backups and sharing</h2>
+          <h2>6. Payments, backups and sharing</h2>
+          <h3>Automatic tracking purchase</h3>
+          <p>Buying automatic car-trip recording is optional and is a one-time purchase processed through Google Play Billing. You do not create a FuelSum account to pay. Google handles your Google account, payment method and transaction under its own policies. FuelSum receives the product identifier, purchase token and purchase status so it can confirm and acknowledge the purchase. FuelSum does not receive your full payment-card or bank-account details.</p>
+          <p>FuelSum stores only whether automatic tracking is unlocked, in private app storage on your device. That yes-or-no flag is not included in fuel-record backups and is not sent to Analytics or Crashlytics. Google Play keeps the purchase record. If you reinstall FuelSum or clear the app’s storage, the app asks Play whether that Google account still owns the purchase. If Play reports that the purchase was refunded or revoked, FuelSum removes the unlock. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</p>
           <h3>Optional developer tips</h3>
-          <p>One-time tips are processed through Google Play Billing. Google handles your Google account, payment method and transaction under its own policies. FuelSum receives product identifiers, purchase tokens and purchase status to complete and acknowledge the transaction; we can access the transaction information Google Play makes available to developers. FuelSum does not receive your full payment-card or bank-account details. Google may retain payment records for its transaction, fraud-prevention and legal obligations. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</p>
+          <p>One-time tips are processed through Google Play Billing. Google handles your Google account, payment method and transaction under its own policies. FuelSum receives product identifiers, purchase tokens and purchase status to complete and acknowledge the transaction; we can access the transaction information Google Play makes available to developers. FuelSum does not receive your full payment-card or bank-account details. A completed tip is consumed so another tip can be purchased later. Google may retain payment records for its transaction, fraud-prevention and legal obligations. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</p>
           <h3>Recovery copies and exports</h3>
           <p>Automatic recovery copies are enabled by default in the app’s private storage. If you select an additional backup folder, FuelSum writes copies there too. A folder offered by a cloud-storage provider may sync according to that provider’s settings and privacy policy. Backups may contain your records, notes and receipt photos.</p>
           <p>When you share a backup, report or estimate, you choose the destination app or recipient using Android’s sharing tools. That destination handles the shared data under its own terms. FuelSum’s backup files are not password-protected or encrypted by FuelSum; choose storage and recipients you trust.</p>
@@ -192,6 +195,7 @@
             <li><strong>Recovery copies:</strong> automatic backup retention normally keeps the ten most recent recovery points. Deleting active records does not erase existing recovery copies, exported files, shared copies or copies in a selected backup folder. Clearing Android app storage or uninstalling removes app-private recovery copies; delete external copies separately through their storage provider or recipient.</li>
             <li><strong>Analytics:</strong> retained according to the Google Analytics property’s retention settings and Google’s applicable retention/deletion rules. Aggregate reports can remain after individual event data expires. Turning collection off stops future collection rather than erasing previously received data.</li>
             <li><strong>Crash reports:</strong> Google states that Crashlytics keeps crash data and associated identifiers for 90 days before beginning removal from its live and backup systems. See <a href="https://firebase.google.com/support/privacy">Firebase’s retention information</a>.</li>
+            <li><strong>Automatic-tracking unlock:</strong> the on-device yes-or-no flag is removed when you clear the app’s storage or uninstall it. Google Play may keep the payment record under its own retention rules. The app can restore the unlock from Play on the same Google account.</li>
             <li><strong>ML Kit and Google Play:</strong> technical metrics and payment records are handled under the Google policies linked above.</li>
             <li><strong>Messages you send us:</strong> we use your email address and message contents to respond and handle your request, and keep them as needed for that purpose and applicable record-keeping obligations.</li>
           </ul>
@@ -205,7 +209,7 @@
         </section>
         <section id="choices">
           <h2>9. Your choices and requests</h2>
-          <p>You can independently turn off the two Firebase services in Settings → Privacy, turn automatic trip recording off in Settings → Live recording, manage location, physical-activity and notification permissions in Android settings, change automatic-backup settings, and edit, export or delete your local records. You can remove a saved trip if you were a passenger.</p>
+          <p>You can independently turn off the two Firebase services in Settings → Privacy, choose not to buy automatic tracking, turn automatic trip recording off in Settings → Live recording, manage location, physical-activity and notification permissions in Android settings, change automatic-backup settings, and edit, export or delete your local records. You can remove a saved trip if you were a passenger. Manual live trips remain available without the automatic-tracking purchase.</p>
           <p>Depending on applicable law, you may have rights to request access, correction or deletion of personal information, or to object to or restrict its processing. Contact us using the details below. We may need enough information to verify and locate the relevant information. We cannot directly access records that exist only on your device, and telemetry is not linked to a FuelSum account. A request may therefore require additional information and is subject to applicable retention obligations and technical limits.</p>
           <p>You do not need to send us your fuel database or receipts to ask a privacy question. Include only what is necessary for your request.</p>
         </section>
